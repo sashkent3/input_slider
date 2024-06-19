@@ -124,8 +124,9 @@ class InputSlider extends StatefulWidget {
       this.leadingWeight,
       this.sliderWeight,
       this.textFieldSize,
-      this.vertical = false})
-      : super();
+      this.vertical = false,
+      super.key}
+  );
 
   @override
   _InputSliderState createState() => _InputSliderState(
