@@ -103,7 +103,8 @@ class InputSlider extends StatefulWidget {
   final bool vertical;
 
   const InputSlider(
-      {required this.onChange,
+      {Key? key,
+      required this.onChange,
       required this.min,
       required this.max,
       required this.defaultValue,
@@ -124,9 +125,8 @@ class InputSlider extends StatefulWidget {
       this.leadingWeight,
       this.sliderWeight,
       this.textFieldSize,
-      this.vertical = false,
-      super.key}
-  );
+      this.vertical = false})
+      : super(key: key);
 
   @override
   _InputSliderState createState() => _InputSliderState(
